@@ -1,0 +1,17 @@
+{"time":"2025-03-24T14:41:49.213765207+08:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-24T14:41:49.213785628+08:00","level":"INFO","msg":"created symlink","path":"/home/ckx/minimind/wandb/run-20250324_144149-rszic1dp/logs/debug-core.log"}
+{"time":"2025-03-24T14:41:49.215767497+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-24T14:41:49.225869968+08:00","level":"INFO","msg":"created new stream","id":"rszic1dp"}
+{"time":"2025-03-24T14:41:49.22592097+08:00","level":"INFO","msg":"stream: started","id":"rszic1dp"}
+{"time":"2025-03-24T14:41:49.225964379+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"rszic1dp"}}
+{"time":"2025-03-24T14:41:49.225950945+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"rszic1dp"}}
+{"time":"2025-03-24T14:41:49.225968229+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"rszic1dp"}}
+{"time":"2025-03-24T14:42:19.227688971+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-03-24T14:42:51.424962933+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-03-24T14:43:21.255398991+08:00","level":"INFO","msg":"stream: closing","id":"rszic1dp"}
+{"time":"2025-03-24T14:43:21.255613659+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2025-03-24T14:43:21.255615346+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"rszic1dp"}}
+{"time":"2025-03-24T14:43:21.255714485+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"rszic1dp"}}
+{"time":"2025-03-24T14:43:21.255895054+08:00","level":"ERROR","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"Defer":{}}}},"control":{"always_send":true}}}}
+{"time":"2025-03-24T14:43:21.257071347+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"rszic1dp"}}
+{"time":"2025-03-24T14:43:21.257111872+08:00","level":"INFO","msg":"stream: closed","id":"rszic1dp"}

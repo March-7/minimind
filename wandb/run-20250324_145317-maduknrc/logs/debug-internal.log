@@ -1,0 +1,9 @@
+{"time":"2025-03-24T14:53:17.46751142+08:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-24T14:53:17.467548135+08:00","level":"INFO","msg":"created symlink","path":"/home/ckx/minimind/wandb/run-20250324_145317-maduknrc/logs/debug-core.log"}
+{"time":"2025-03-24T14:53:17.470214121+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-24T14:53:17.482556806+08:00","level":"INFO","msg":"created new stream","id":"maduknrc"}
+{"time":"2025-03-24T14:53:17.482610729+08:00","level":"INFO","msg":"stream: started","id":"maduknrc"}
+{"time":"2025-03-24T14:53:17.48267164+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"maduknrc"}}
+{"time":"2025-03-24T14:53:17.482643726+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"maduknrc"}}
+{"time":"2025-03-24T14:53:17.482651943+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"maduknrc"}}
+{"time":"2025-03-24T14:53:47.484401673+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}

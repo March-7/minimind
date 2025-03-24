@@ -257,7 +257,7 @@ class MOEFeedForward(nn.Module):
         return expert_cache
 
 
-class MiniMindBlock(nn.Module):
+class KXGPTBlock(nn.Module):
     def __init__(self, layer_id: int, config: LMConfig):
         super().__init__()
         self.n_heads = config.n_heads
@@ -282,7 +282,7 @@ class MiniMindBlock(nn.Module):
         return out, past_kv
 
 
-class MiniMindLM(PreTrainedModel):
+class KXGPTLM(PreTrainedModel):
     config_class = LMConfig
 
     def __init__(self, params: LMConfig = None):
@@ -291,10 +291,10 @@ class MiniMindLM(PreTrainedModel):
         self.vocab_size, self.n_layers = params.vocab_size, params.n_layers
         self.tok_embeddings = nn.Embedding(params.vocab_size, params.dim)
         self.dropout = nn.Dropout(params.dropout)
-        self.layers = nn.ModuleList([MiniMindBlock(l, params) for l in range(self.n_layers)])
+        self.layers = nn.ModuleList([KXGPTBlock(l, params) for l in range(self.n_layers)])
         self.norm = RMSNorm(params.dim, eps=params.norm_eps)
         self.output = nn.Linear(params.dim, params.vocab_size, bias=False)
-        self.tok_embeddings.weight = self.output.weight
+        self.tok_embeddings.weight = self.output.weight #权重共享
         self.register_buffer("pos_cis",
                              precompute_pos_cis(dim=params.dim // params.n_heads, theta=params.rope_theta),
                              persistent=False)

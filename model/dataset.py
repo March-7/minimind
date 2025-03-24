@@ -196,5 +196,73 @@ class DPODataset(Dataset):
         return loss_mask
 
 
+def eval():
+    from transformers import AutoTokenizer
+
+    # 加载预训练的tokenizer
+    tokenizer = AutoTokenizer.from_pretrained("../model/kxgpt_tokenizer")
+
+    messages = [
+        {"role": "system", "content": "你是一个优秀的聊天机器人，总是给我正确的回应！"},
+        {"role": "user", "content": '你来自哪里？'},
+        {"role": "assistant", "content": '我来自地球'},
+        {"role": "user", "content": 'bye'},
+        {"role": "assistant", "content": 'byebye'}
+    ]
+    new_prompt = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False
+    )
+    print(new_prompt)
+    
+
+def test_loss_mask():
+    from transformers import AutoTokenizer
+
+    # 加载预训练的tokenizer
+    tokenizer = AutoTokenizer.from_pretrained("../model/kxgpt_tokenizer")
+
+    # 使用实际的数据文件路径
+    data_path = "/home/ckx/minimind/dataset/sft_2048.jsonl"
+    
+    # 创建一个SFTDataset实例
+    dataset = SFTDataset(data_path, tokenizer, max_length=2048)
+
+    # 获取第一个样本
+    sample = dataset.samples[0]
+    print("Sample:", sample)
+
+    # 构建对话提示
+    prompt = dataset._create_chat_prompt(sample['conversations'])
+    print("Prompt:", prompt)
+
+    # 编码输入序列
+    input_ids = tokenizer(prompt).input_ids[:dataset.max_length]
+    input_ids += [tokenizer.pad_token_id] * (dataset.max_length - len(input_ids))
+    print("Input IDs:", input_ids)
+
+    # 生成loss掩码
+    loss_mask = dataset._generate_loss_mask(input_ids)
+    print("Loss Mask:", loss_mask)
+
+    # 验证结果
+    expected_mask = [0] * len(input_ids)
+    # 找到助手回复的位置并设置掩码
+    for i, token in enumerate(input_ids):
+        if input_ids[i:i + len(dataset.bos_id)] == dataset.bos_id:
+            start = i + len(dataset.bos_id)
+            end = start
+            while end < len(input_ids):
+                if input_ids[end:end + len(dataset.eos_id)] == dataset.eos_id:
+                    break
+                end += 1
+            for j in range(start + 1, min(end + len(dataset.eos_id) + 1, dataset.max_length)):
+                expected_mask[j] = 1
+
+    assert loss_mask == expected_mask, f"Loss mask does not match expected. Got {loss_mask}, expected {expected_mask}"
+    print("Test passed!")
+
+
 if __name__ == "__main__":
-    pass
+    # eval()
+    test_loss_mask()

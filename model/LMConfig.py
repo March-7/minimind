@@ -3,7 +3,7 @@ from typing import List
 
 
 class LMConfig(PretrainedConfig):
-    model_type = "minimind"
+    model_type = "kxgpt"
 
     def __init__(
             self,
@@ -11,7 +11,7 @@ class LMConfig(PretrainedConfig):
             n_layers: int = 8,
             n_heads: int = 8,
             n_kv_heads: int = 2,
-            vocab_size: int = 6400,
+            vocab_size: int = 6600,
             hidden_dim: int = None,
             multiple_of: int = 64,
             norm_eps: float = 1e-5,
