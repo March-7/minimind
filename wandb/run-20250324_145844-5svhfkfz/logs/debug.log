@@ -1,23 +1,23 @@
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Configure stats pid to 1554113
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Loading settings from /home/ckx/.config/wandb/settings
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Loading settings from /home/ckx/minimind/wandb/settings
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'train_full_sft_larger_seq.py', 'program_abspath': '/home/ckx/minimind/train_full_sft_larger_seq.py', 'program': '/home/ckx/minimind/train_full_sft_larger_seq.py'}
-2025-03-24 14:53:17,459 INFO    MainThread:1554113 [wandb_setup.py:_flush():79] Applying login settings: {}
-2025-03-24 14:53:17,460 INFO    MainThread:1554113 [wandb_init.py:_log_setup():532] Logging user logs to /home/ckx/minimind/wandb/run-20250324_145317-maduknrc/logs/debug.log
-2025-03-24 14:53:17,460 INFO    MainThread:1554113 [wandb_init.py:_log_setup():533] Logging internal logs to /home/ckx/minimind/wandb/run-20250324_145317-maduknrc/logs/debug-internal.log
-2025-03-24 14:53:17,460 INFO    MainThread:1554113 [wandb_init.py:init():617] calling init triggers
-2025-03-24 14:53:17,460 INFO    MainThread:1554113 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Configure stats pid to 1563561
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Loading settings from /home/ckx/.config/wandb/settings
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Loading settings from /home/ckx/minimind/wandb/settings
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'train_full_sft_larger_seq.py', 'program_abspath': '/home/ckx/minimind/train_full_sft_larger_seq.py', 'program': '/home/ckx/minimind/train_full_sft_larger_seq.py'}
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-03-24 14:58:44,806 INFO    MainThread:1563561 [wandb_init.py:_log_setup():532] Logging user logs to /home/ckx/minimind/wandb/run-20250324_145844-5svhfkfz/logs/debug.log
+2025-03-24 14:58:44,807 INFO    MainThread:1563561 [wandb_init.py:_log_setup():533] Logging internal logs to /home/ckx/minimind/wandb/run-20250324_145844-5svhfkfz/logs/debug-internal.log
+2025-03-24 14:58:44,807 INFO    MainThread:1563561 [wandb_init.py:init():617] calling init triggers
+2025-03-24 14:58:44,807 INFO    MainThread:1563561 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
 config: {}
-2025-03-24 14:53:17,460 INFO    MainThread:1554113 [wandb_init.py:init():667] starting backend
-2025-03-24 14:53:17,460 INFO    MainThread:1554113 [wandb_init.py:init():671] sending inform_init request
-2025-03-24 14:53:17,463 INFO    MainThread:1554113 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
-2025-03-24 14:53:17,463 INFO    MainThread:1554113 [wandb_init.py:init():684] backend started and connected
-2025-03-24 14:53:17,465 INFO    MainThread:1554113 [wandb_init.py:init():779] updated telemetry
-2025-03-24 14:53:17,470 INFO    MainThread:1554113 [wandb_init.py:init():812] communicating run to backend with 90.0 second timeout
-2025-03-24 14:54:15,731 INFO    Thread-1 (wrapped_target):1554113 [retry.py:__call__():172] Retry attempt failed:
+2025-03-24 14:58:44,807 INFO    MainThread:1563561 [wandb_init.py:init():667] starting backend
+2025-03-24 14:58:44,807 INFO    MainThread:1563561 [wandb_init.py:init():671] sending inform_init request
+2025-03-24 14:58:44,808 INFO    MainThread:1563561 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-24 14:58:44,809 INFO    MainThread:1563561 [wandb_init.py:init():684] backend started and connected
+2025-03-24 14:58:44,811 INFO    MainThread:1563561 [wandb_init.py:init():779] updated telemetry
+2025-03-24 14:58:44,817 INFO    MainThread:1563561 [wandb_init.py:init():812] communicating run to backend with 90.0 second timeout
+2025-03-24 14:59:43,291 INFO    Thread-1 (wrapped_target):1563561 [retry.py:__call__():172] Retry attempt failed:
 Traceback (most recent call last):
   File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
     sock = connection.create_connection(
@@ -42,7 +42,7 @@ Traceback (most recent call last):
     self.sock = sock = self._new_conn()
   File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/urllib3/connection.py", line 207, in _new_conn
     raise ConnectTimeoutError(
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7fb468b68880>, 'Connection to api.wandb.ai timed out. (connect timeout=20)')
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f147202c880>, 'Connection to api.wandb.ai timed out. (connect timeout=20)')
 
 The above exception was the direct cause of the following exception:
 
@@ -53,7 +53,7 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fb468b68880>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f147202c880>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -76,10 +76,10 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/requests/adapters.py", line 688, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fb468b68880>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
-2025-03-24 14:54:47,496 ERROR   MainThread:1554113 [wandb_init.py:init():838] encountered error: Run initialization has timed out after 90.0 sec. 
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f147202c880>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+2025-03-24 15:00:14,843 ERROR   MainThread:1563561 [wandb_init.py:init():838] encountered error: Run initialization has timed out after 90.0 sec. 
 Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
-2025-03-24 14:54:47,496 ERROR   MainThread:1554113 [wandb_init.py:init():1262] error in wandb.init()
+2025-03-24 15:00:14,844 ERROR   MainThread:1563561 [wandb_init.py:init():1262] error in wandb.init()
 Traceback (most recent call last):
   File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1252, in init
     return wi.init()
@@ -87,4 +87,4 @@ Traceback (most recent call last):
     raise error
 wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. 
 Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
-2025-03-24 14:54:49,508 WARNING MsgRouterThr:1554113 [router.py:message_loop():77] message_loop has been closed
+2025-03-24 15:00:16,850 WARNING MsgRouterThr:1563561 [router.py:message_loop():77] message_loop has been closed
