@@ -3,7 +3,7 @@
 ## 1、训练tokenizer
 - 使用ByteLevel-bpe算法
 - 词表大小6600
-- 特殊token ["<unk>", "<s>", "</s>"]
+- 特殊token ["\<unk>", "\<s>", "\</s>"]
 - 耗时约：30min
 
 ![tokenizer训练](./images/tokenizer-train.png)
@@ -24,7 +24,6 @@
         n_heads: int = 8,
         n_kv_heads: int = 2,
         vocab_size: int = 6600,
-        hidden_dim: int = None,
         multiple_of: int = 64,
         norm_eps: float = 1e-5,
         max_seq_len: int = 8192,
@@ -33,7 +32,7 @@
         flash_attn: bool = True,
 ```
 - 训练了4个epoch
-- 总参数量：25.932 百万
+- 总参数量：25.932 百万(26M)
 - 耗时：161min
 
 ## 3、分阶段sft
@@ -46,3 +45,4 @@
 - Full RLHF 数据路径：./dataset/dpo.jsonl
 - sft阶段学习率为 「5e-6」->「5e-7」长度512，建议离线正负样本「概率」偏好对齐阶段lr <=「1e-8」长度3000，否则很容易遗忘训坏
 - batchsize：8 耗时：
+- dpo的很大区别在于需要policy model和ref model，损失函数差别大，常用logsigmoid
