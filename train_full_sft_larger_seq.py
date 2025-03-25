@@ -85,7 +85,7 @@ def train_epoch(epoch, wandb):
         if (step + 1) % args.save_interval == 0 and (not ddp or dist.get_rank() == 0):
             model.eval()
             moe_path = '_moe' if lm_config.use_moe else ''
-            ckp = f'{args.save_dir}/full_sft_{lm_config.dim}{moe_path}.pth'
+            ckp = f'{args.save_dir}/full_sft_seqlarger_{lm_config.dim}{moe_path}.pth'
 
             if isinstance(model, torch.nn.parallel.DistributedDataParallel):
                 state_dict = model.module.state_dict()
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="kxGPT Full SFT 2048")
     parser.add_argument("--out_dir", type=str, default="out")
     parser.add_argument("--epochs", type=int, default=1)
-    parser.add_argument("--batch_size", type=int, default=64)
+    parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--learning_rate", type=float, default=5e-5)
     parser.add_argument("--device", type=str, default="cuda:0" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--dtype", type=str, default="bfloat16")
@@ -167,7 +167,7 @@ if __name__ == "__main__":
 
     if args.use_wandb and (not ddp or ddp_local_rank == 0):
         import wandb
-
+        os.environ["WANDB_MODE"] = "offline"  # 设置wandb为离线模式
         wandb.init(project=args.wandb_project, name=args.wandb_run_name)
     else:
         wandb = None
