@@ -1,0 +1,52 @@
+{
+  "os":  "Linux-5.15.0-70-generic-x86_64-with-glibc2.31",
+  "python":  "3.10.16",
+  "startedAt":  "2025-03-27T00:06:46.848064Z",
+  "args":  [
+    "--use_wandb"
+  ],
+  "program":  "/home/ckx/minimind/train_lora.py",
+  "codePath":  "train_lora.py",
+  "git":  {
+    "remote":  "git@github.com:March-7/minimind.git",
+    "commit":  "e735d2ba7a4841baa5c1b2bb3672505aa99043e1"
+  },
+  "email":  "22360275@zju.edu.cn",
+  "root":  "/home/ckx/minimind",
+  "host":  "amax",
+  "username":  "ckx",
+  "executable":  "/home/ckx/.conda/envs/minimind/bin/python",
+  "codePathLocal":  "train_lora.py",
+  "cpu_count":  32,
+  "cpu_count_logical":  64,
+  "gpu":  "[NVIDIA A100 80GB PCIe, NVIDIA A100 80GB PCIe]",
+  "gpu_count":  2,
+  "disk":  {
+    "/":  {
+      "total":  "226300428288",
+      "used":  "123844943872"
+    }
+  },
+  "memory":  {
+    "total":  "540678029312"
+  },
+  "cpu":  {
+    "count":  32,
+    "countLogical":  64
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100 80GB PCIe",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A100 80GB PCIe",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.4"
+}

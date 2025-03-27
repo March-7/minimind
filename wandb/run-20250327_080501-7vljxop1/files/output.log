@@ -1,0 +1,32 @@
+LLM 总参数量: 26194432
+LoRA 参数量: 262144
+LoRA 参数占比: 1.00%
+Epoch:[1/50](0/3) loss:2.873 lr:0.000055000000 epoch_Time:0.0min:
+Traceback (most recent call last):
+  File "/home/ckx/minimind/train_lora.py", line 194, in <module>
+    train_epoch(epoch, wandb)
+  File "/home/ckx/minimind/train_lora.py", line 83, in train_epoch
+    save_lora(model, f'{args.save_dir}/lora/{args.lora_name}_{lm_config.dim}.pth')
+  File "/home/ckx/minimind/model/model_lora.py", line 49, in save_lora
+    torch.save(state_dict, path)
+  File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/torch/serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/torch/serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: Parent directory out/lora does not exist.
+Traceback (most recent call last):
+  File "/home/ckx/minimind/train_lora.py", line 194, in <module>
+    train_epoch(epoch, wandb)
+  File "/home/ckx/minimind/train_lora.py", line 83, in train_epoch
+    save_lora(model, f'{args.save_dir}/lora/{args.lora_name}_{lm_config.dim}.pth')
+  File "/home/ckx/minimind/model/model_lora.py", line 49, in save_lora
+    torch.save(state_dict, path)
+  File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/torch/serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/home/ckx/.conda/envs/minimind/lib/python3.10/site-packages/torch/serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: Parent directory out/lora does not exist.

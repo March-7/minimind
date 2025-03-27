@@ -33,10 +33,10 @@ def init_model(args):
             apply_lora(model)
             load_lora(model, f'./{args.out_dir}/lora/{args.lora_name}_{args.dim}.pth')
     else:
-        transformers_model_path = './MiniMind2'
+        transformers_model_path = './kxGPT-26M-Instrust'
         tokenizer = AutoTokenizer.from_pretrained(transformers_model_path)
         model = AutoModelForCausalLM.from_pretrained(transformers_model_path, trust_remote_code=True)
-    print(f'MiniMind模型参数量: {sum(p.numel() for p in model.parameters() if p.requires_grad) / 1e6:.2f}M(illion)')
+    print(f'kxGPT模型参数量: {sum(p.numel() for p in model.parameters() if p.requires_grad) / 1e6:.2f}M(illion)')
     return model.eval().to(args.device), tokenizer
 
 
@@ -51,6 +51,7 @@ def get_prompt_datas(args):
             '二氧化碳在空气中',
             '地球上最大的动物有',
             '杭州市的美食有'
+            
         ]
     else:
         if args.lora_name == 'None':
@@ -64,7 +65,9 @@ def get_prompt_datas(args):
                 '推荐一些杭州的特色美食吧。',
                 '请为我讲解“大语言模型”这个概念。',
                 '如何理解ChatGPT？',
-                'Introduce the history of the United States, please.'
+                'Introduce the history of the United States, please.',
+                '孕妇在饮食上需要注意什么？',
+                '服用抗生素时需要注意哪些事项？'
             ]
         else:
             # 特定领域问题

@@ -1,0 +1,18 @@
+{"time":"2025-03-27T08:18:29.011698998+08:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-27T08:18:29.011709199+08:00","level":"INFO","msg":"created symlink","path":"/home/ckx/minimind/wandb/run-20250327_081829-z3k4guev/logs/debug-core.log"}
+{"time":"2025-03-27T08:18:29.013675206+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-27T08:18:29.029154523+08:00","level":"INFO","msg":"created new stream","id":"z3k4guev"}
+{"time":"2025-03-27T08:18:29.029176258+08:00","level":"INFO","msg":"stream: started","id":"z3k4guev"}
+{"time":"2025-03-27T08:18:29.029198301+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"z3k4guev"}}
+{"time":"2025-03-27T08:18:29.029222581+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"z3k4guev"}}
+{"time":"2025-03-27T08:18:29.029234563+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"z3k4guev"}}
+{"time":"2025-03-27T08:18:29.660285788+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-03-27T08:18:29.663477628+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-27T09:11:29.244952501+08:00","level":"INFO","msg":"stream: closing","id":"z3k4guev"}
+{"time":"2025-03-27T09:11:29.245009361+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-27T09:11:29.253901372+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-27T09:11:30.492977196+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-27T09:11:30.920043469+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"z3k4guev"}}
+{"time":"2025-03-27T09:11:30.920089074+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"z3k4guev"}}
+{"time":"2025-03-27T09:11:30.920102118+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"z3k4guev"}}
+{"time":"2025-03-27T09:11:30.920215246+08:00","level":"INFO","msg":"stream: closed","id":"z3k4guev"}

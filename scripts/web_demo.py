@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 import torch
 
-st.set_page_config(page_title="MiniMind", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="kxGPT", initial_sidebar_state="collapsed")
 
 # 在文件开头的 CSS 样式中修改按钮样式
 st.markdown("""
@@ -232,7 +232,7 @@ def main():
                 unsafe_allow_html=True)
 
     # 处理新的输入或重新生成
-    prompt = st.chat_input(key="input", placeholder="给 MiniMind 发送消息")
+    prompt = st.chat_input(key="input", placeholder="给 kxGPT 发送消息")
 
     # 检查是否需要重新生成
     if hasattr(st.session_state, 'regenerate') and st.session_state.regenerate:

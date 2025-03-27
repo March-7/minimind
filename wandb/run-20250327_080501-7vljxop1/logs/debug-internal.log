@@ -1,0 +1,18 @@
+{"time":"2025-03-27T08:05:01.021720891+08:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-27T08:05:01.021754516+08:00","level":"INFO","msg":"created symlink","path":"/home/ckx/minimind/wandb/run-20250327_080501-7vljxop1/logs/debug-core.log"}
+{"time":"2025-03-27T08:05:01.024608762+08:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-27T08:05:01.039632524+08:00","level":"INFO","msg":"created new stream","id":"7vljxop1"}
+{"time":"2025-03-27T08:05:01.039699533+08:00","level":"INFO","msg":"stream: started","id":"7vljxop1"}
+{"time":"2025-03-27T08:05:01.039743603+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"7vljxop1"}}
+{"time":"2025-03-27T08:05:01.039737972+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"7vljxop1"}}
+{"time":"2025-03-27T08:05:01.039825023+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"7vljxop1"}}
+{"time":"2025-03-27T08:05:01.532365785+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-03-27T08:05:01.533800511+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-27T08:05:02.905990378+08:00","level":"INFO","msg":"stream: closing","id":"7vljxop1"}
+{"time":"2025-03-27T08:05:02.906039642+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-27T08:05:02.912357611+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-27T08:05:07.099915464+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-27T08:05:07.555888128+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"7vljxop1"}}
+{"time":"2025-03-27T08:05:07.55597444+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"7vljxop1"}}
+{"time":"2025-03-27T08:05:07.55595679+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"7vljxop1"}}
+{"time":"2025-03-27T08:05:07.556113899+08:00","level":"INFO","msg":"stream: closed","id":"7vljxop1"}
